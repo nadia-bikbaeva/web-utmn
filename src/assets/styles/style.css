@@ -9,3 +9,97 @@
 .test {
     color: red !important;
 }
+
+/* параграфы */
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+/* h1 */
+.main-heading {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+/* h2 контакты */
+.contacts-heading {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+/* h3 */
+.section-heading {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* h4 */
+.sub-heading {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+/* форма */
+.form-input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.form-label {
+    color: #539698;
+}
+
+/* кнопка отправки */
+.submit-btn {
+    background: linear-gradient(90deg, #5A98D0 0%, #A067E9 100%);
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+/* форма контакты */
+.contact-form {
+    background-image: url('/src/assets/img/background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* хлебные крошки */
+.breadcrumbs {
+    display: flex;
+    background: linear-gradient(to bottom, #fff 0%, #539698 100%);
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin: 16px 0;
+}
+
+.breadcrumbs a {
+    display: block;
+    padding: 11px 28px 8px 30px;
+    background: transparent;
+    font-family: Times New Roman, serif;
+    font-size: 20px;
+    color: #1d2323;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #b9bfc1;
+    border-left: none;
+    border-radius: 0 40px 40px 0;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.17);
+    margin-right: -23px;
+}
