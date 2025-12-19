@@ -1,18 +1,590 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <link rel="stylesheet" href="/src/assets/styles/style.css" />
 </head>
+
 <body>
-<div class="test" style="color: blue">
-    test
+<header class="header">
+    <a class="logo text_color_blue" href="#">IT WEBSITE</a>
+
+    <nav class="header__menu">
+        <ul class="menu">
+            <li class="menu__item"><a href="#">Services</a></li>
+            <li class="menu__item"><a href="#">Media</a></li>
+            <li class="menu__item"><a href="#">Cases</a></li>
+            <li class="menu__item"><a href="#">FAQ</a></li>
+            <li class="menu__item"><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="header__contacts">
+        <div class="contacts__phone">
+            <img
+                    class="contacts__image image__phone"
+                    src="/src/assets/icons/IconPhone.svg"
+                    alt="PhoneIcon"
+            />
+            <p class="contacts__info text_color_blue">+7 (111) 111 11 11</p>
+            <p class="contacts__info text_color_blue">+7 (111) 111 11 11</p>
+        </div>
+        <div class="contacts__email">
+            <img
+                    class="contacts__image image__email"
+                    src="/src/assets/icons/IconEmail.svg"
+                    alt="MailIcon"
+            />
+            <p class="contacts__info text_color_blue">itcompany@mail.com</p>
+        </div>
+    </div>
+</header>
+
+<div class="main__description">
+    <h2 class="description__header header__text">
+        Development of
+        <span class="text_color_blue">mobile applications</span> and
+        <span class="text_color_blue">web services</span> of any complexity
+    </h2>
+
+    <p class="default__text">
+        We create mobile applications for iOS, Android that transfer your
+        business to mobile applications of your customers' devices
+    </p>
 </div>
 
+<article class="main__feedback">
+    <h3 class="subheader__text">
+        Leave your contacts and we will call you back<br />within 30 minutes
+    </h3>
+    <form class="feedback__form" action="" method="">
+        <div class="feedback__field">
+            <label for="feedback__phone" class="form__label">Phone number</label>
+            <div class="feedback__field--phone">
+                <img
+                        id="feedback__image"
+                        src="/src/assets/img/IconFlag.png"
+                        alt="FlagIcon"
+                />
+                <input
+                        type="tel"
+                        id="feedback__phone"
+                        name="feedback__phone"
+                        placeholder="+7 (111) 111-11-11"
+                        required
+                />
+            </div>
+        </div>
+
+        <div class="feedback__field">
+            <label for="feedback__name" class="form__label">Full name</label>
+            <input
+                    type="text"
+                    id="feedback__name"
+                    name="feedback__name"
+                    placeholder="Иван Иванов"
+                    required
+            />
+        </div>
+
+        <button type="submit" class="feedback__button">Get consultation</button>
+    </form>
+</article>
+
+<hr />
+<section class="development__info">
+    <div class="development__technologies">
+        <h2 class="header__text">Full development cycle</h2>
+        <p class="default__text">We use proven technologies</p>
+        <h3 class="subheader__text">Web</h3>
+        <p class="default__text">
+            PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js/ Nuxt /
+            MySQL / Laravel / GO lang / django / Python
+        </p>
+        <h3 class="subheader__text">Mobile</h3>
+        <p class="default__text">
+            Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm /
+            Coroutine / RxJava / RxSwift / Unit Test / Navigation
+        </p>
+    </div>
+    <div class="development__categories">
+        <ul class="development__list">
+            <li class="development__item"><a href="#">IOS development</a></li>
+            <li class="development__item"><a href="#">Android development</a></li>
+            <li class="development__item"><a href="#">Web development</a></li>
+            <li class="development__item"><a href="#">UI/UX design</a></li>
+            <li class="development__item"><a href="#">Testing</a></li>
+            <li class="development__item"><a href="#">Launch</a></li>
+            <li class="development__item"><a href="#">IT consulting</a></li>
+        </ul>
+    </div>
+</section>
+
+<hr />
+<section class="projects">
+    <h2 class="header__text">
+        Developed more than <span class="text_color_blue">100</span> projects in
+        <span class="text_color_blue">15</span> industries
+    </h2>
+    <div class="project__list">
+        <article class="project__column">
+            <div class="project__item">
+                <img
+                        class="project__image"
+                        src="/src/assets/icons/social_media.svg"
+                />
+                <p>Social media</p>
+            </div>
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/fitness.svg" />
+                <p>Fitness and sport</p>
+            </div>
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/bank.svg" />
+                <p>Bank</p>
+            </div>
+            <div class="project__item">
+                <img
+                        class="project__image"
+                        src="/src/assets/icons/construction.svg"
+                />
+                <p>Construction</p>
+            </div>
+            <div class="project__item">
+                <img
+                        class="project__image"
+                        src="/src/assets/icons/game_projects.svg"
+                />
+                <p>Game projects</p>
+            </div>
+        </article>
+        <article class="project__column">
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/education.svg" />
+                <p>Education</p>
+            </div>
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/auto.svg" />
+                <p>Auto, transport</p>
+            </div>
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/medicine.svg" />
+                <p>Medicine, health</p>
+            </div>
+            <div class="project__item">
+                <img
+                        class="project__image"
+                        src="/src/assets/icons/restaurant.svg"
+                />
+                <p>Restaurants, food delivery</p>
+            </div>
+            <div class="project__item">
+                <img
+                        class="project__image"
+                        src="/src/assets/icons/marketplace.svg"
+                />
+                <p>Marketplaces</p>
+            </div>
+        </article>
+        <article class="project__column">
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/ar.svg" />
+                <p>AR technology</p>
+            </div>
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/tv.svg" />
+                <p>TV series</p>
+            </div>
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/startups.svg" />
+                <p>Startups</p>
+            </div>
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/religion.svg" />
+                <p>Religion</p>
+            </div>
+            <div class="project__item">
+                <img class="project__image" src="/src/assets/icons/online.svg" />
+                <p>Online cources</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="clients">
+    <h2 class="header__text">Projects we are proud of</h2>
+    <p class="default__text">
+        Our software development company is truly proud of the wonderful clients
+        we have<br />worked with. We enjoy a long-term partnership
+    </p>
+    <div class="clients__companies">
+        <ul class="clients__list">
+            <li class="clients_item"><a href="#">I-teka</a></li>
+            <li class="clients_item"><a href="#">Dauletten</a></li>
+            <li class="clients_item"><a href="#">Guru Bosch</a></li>
+            <li class="clients_item"><a href="#">Santo</a></li>
+            <li class="clients_item"><a href="#">Home Credit Bank</a></li>
+            <li class="clients_item"><a href="#">BI Partners</a></li>
+            <li class="clients_item"><a href="#">Europharma</a></li>
+        </ul>
+        <button type="button" class="clients__button">
+            View 100 more projects
+        </button>
+    </div>
+    <div class="clents__iteka">
+        <h2 class="header__text">I-teka</h2>
+        <p class="default__text">
+            The application is designed to search for drugs by availability in
+            pharmacies in cities. During quarantine, the application helped many
+            people,<br />which gives more value.
+        </p>
+
+        <p class="default__text">
+            Business analysis / iOS / Android / QA / UI/UX Design
+        </p>
+
+        <div class="iteka__info">
+            <div class="iteka__category">
+                <img
+                        class="iteka__icon"
+                        src="/src/assets/icons/IconGeo.svg"
+                        alt="GeoPosition"
+                />
+                <p class="iteka__text default__text">Kazakhstan</p>
+            </div>
+            <div class="iteka__category">
+                <img
+                        class="iteka__icon"
+                        src="/src/assets/icons/IconCase.svg"
+                        alt="SuitCase"
+                />
+                <p class="iteka__text default__text">Medicine</p>
+            </div>
+            <div class="users__growth">
+                <h3 class="subheader__text">400%</h3>
+                <p class="form__label">User Growth</p>
+            </div>
+            <div class="users__active">
+                <h3 class="subheader__text">+ 200 000</h3>
+                <p class="form__label">Active Users</p>
+            </div>
+            <img src="/src/assets/img/AppStore.png" class="clients__app"  alt=""/>
+            <img src="/src/assets/img/GooglePlay.png" class="clients__app"  alt=""/>
+        </div>
+    </div>
+    <img class="aside__image" src="/src/assets/img/i-teka.png"  alt=""/>
+</section>
+
+<hr />
+
+<section class="contact">
+    <div class="contact__text">
+        <h3 class="header__text text_color_white">
+            Let's discuss<br />Your project
+        </h3>
+        <p class="default__text text_color_white">
+            Let's figure out how to create an effective application,<br />its cost
+            and terms of its development
+        </p>
+    </div>
+    <article class="contact__feedback">
+        <form class="contact__form" action="" method="get">
+            <div class="feedback__field">
+                <label for="contact__phone" class="form__label"
+                >Best phone number</label
+                >
+                <div class="feedback__field--phone">
+                    <img
+                            id="feedback__image"
+                            src="/src/assets/img/IconFlag.png"
+                            alt="FlagIcon"
+                    />
+                    <input
+                            type="tel"
+                            id="contact__phone"
+                            name="contact__phone"
+                            placeholder="+7 (111) 111-11-11"
+                            required
+                    />
+                </div>
+            </div>
+
+            <div class="feedback__field">
+                <label for="contact__name" class="form__label">Full name</label>
+                <input
+                        type="text"
+                        id="contact__name"
+                        name="contact__name"
+                        placeholder="Иван Иванов"
+                        required
+                />
+            </div>
+
+            <button type="submit" class="contact__button">
+                Discuss the project
+            </button>
+        </form>
+    </article>
+</section>
+
+<hr />
+
+<section class="development__stages">
+    <div class="development__stages__text">
+        <h3 class="header__text">Application Development Stages</h3>
+    </div>
+    <article class="stage__item left__column">
+        <h4 class="stage__header">Analysis</h4>
+        <img class="stage__image" src="/src/assets/icons/planing.svg" />
+        <p class="default__text">
+            We write technical specifications for development, taking into account
+            the business processes and technologies of the customer and the needs
+            of users.
+        </p>
+    </article>
+    <article class="stage__item">
+        <h4 class="stage__header">Testing</h4>
+        <img class="stage__image" src="/src/assets/icons/security.svg" />
+        <p class="default__text">
+            We carry out functional testing and do bug fixes. We adapt the
+            application to different phone resolutions
+        </p>
+    </article>
+    <article class="stage__item left__column">
+        <h4 class="stage__header">Design</h4>
+        <img class="stage__image" src="/src/assets/icons/graphic_design.svg" />
+        <p class="default__text">
+            We adapt the customer's corporate identity to the platform guidelines.
+            We draw convenient and understandable interfaces.
+        </p>
+    </article>
+    <article class="stage__item">
+        <h4 class="stage__header">Launching</h4>
+        <img class="stage__image" src="/src/assets/icons/hosting.svg" />
+        <p class="default__text">
+            We design the application page and publish it in the App Store and
+            Google Play stores.
+        </p>
+    </article>
+    <article class="stage__item left__column">
+        <h4 class="stage__header">Development</h4>
+        <img class="stage__image" src="/src/assets/icons/computer_coding.svg" />
+        <p class="default__text">
+            We create an extensible architecture, write clean and stable code. We
+            integrate with customer technologies.
+        </p>
+    </article>
+    <article class="stage__item">
+        <h4 class="stage__header">Support</h4>
+        <img class="stage__image" src="/src/assets/icons/application.svg" />
+        <p class="default__text">
+            We monitor the stability of the application, update it for new devices
+            and versions of iOS and Android.
+        </p>
+    </article>
+</section>
+
+<hr />
+
+<section class="company__about">
+    <div class="company__text">
+        <h3 class="header__text">Our team</h3>
+        <p class="default__text">
+            A Thousand is a full-cycle digital production company with its own
+            product analytics, design, web and mobile development.
+        </p>
+        <div class="company__stats">
+            <h3 class="header__text">28</h3>
+            <p class="form__label">team members</p>
+        </div>
+        <div class="company__stats">
+            <h3 class="header__text">+100</h3>
+            <p class="form__label">projects</p>
+        </div>
+        <div class="company__stats">
+            <h3 class="header__text">7 years</h3>
+            <p class="form__label">in IT sphere</p>
+        </div>
+        <p class="default__text">
+            All the necessary specialists - from a designer to a tester - are on
+            our staff. We hire the best specialists in the market. It's expensive
+            but worth it
+        </p>
+    </div>
+    <div class="company__video">
+        <img src="/src/assets/img/future_video.jpg" alt="future_video" />
+        <img
+                class="video__button"
+                src="/src/assets/icons/PlayButton.svg"
+                alt="play_video"
+        />
+    </div>
+</section>
+
+<hr />
+
+<section class="book__advert">
+    <div class="book__advert__text">
+        <h3 class="header__text text_color_white">
+            Get the book for free by leaving<br />your contacts
+        </h3>
+    </div>
+    <article class="book__advert__form">
+        <form class="book__form" action="" method="">
+            <div class="feedback__field">
+                <label for="book__phone" class="form__label"> Phone number </label>
+                <div class="feedback__field--phone">
+                    <img
+                            id="feedback__image"
+                            src="/src/assets/img/IconFlag.png"
+                            alt="FlagIcon"
+                    />
+                    <input
+                            type="tel"
+                            id="book__phone"
+                            name="book__phone"
+                            placeholder="+7 (111) 111-11-11"
+                            required
+                    />
+                </div>
+            </div>
+
+            <div class="feedback__field">
+                <label for="book__name"></label><input
+                        type="text"
+                        id="book__name"
+                        class="book__form-name"
+                        name="book__name"
+                        placeholder="Your full name"
+                        required
+                />
+            </div>
+
+            <div class="book__field">
+                <label for="book__email" class="form__label">email</label>
+                <div class="book__field--email">
+                    <input
+                            type="email"
+                            id="book__email"
+                            name="book__email"
+                            placeholder="mail@mail.com"
+                            required
+                    />
+                </div>
+            </div>
+
+            <button type="submit" class="book__button">
+                Send my ebook to my mail
+            </button>
+        </form>
+    </article>
+    <div class="book__image">
+        <img src="/src/assets/img/Book.png" alt="book" />
+    </div>
+</section>
+
+<hr />
+
+<section class="faq">
+    <div class="faq__text">
+        <h3 class="header__text">FAQ</h3>
+    </div>
+    <div class="faq__questions">
+        <article class="question">
+            <h4 class="faq__header">What is the cost of a mobile application?</h4>
+            <img
+                    class="faq__image"
+                    src="/src/assets/icons/IconPlus.svg"
+                    alt="open_block"
+            />
+        </article>
+        <article class="question">
+            <h4 class="faq__header">How long will development take?</h4>
+            <img
+                    class="faq__image"
+                    src="/src/assets/icons/IconPlus.svg"
+                    alt="open_block"
+            />
+        </article>
+        <article class="question border__bottom">
+            <h4 class="faq__header">
+                Do you provide a guarantee for the mobile application?
+            </h4>
+            <img
+                    class="faq__image"
+                    src="/src/assets/icons/IconPlus.svg"
+                    alt="open_block"
+            />
+        </article>
+        <article class="question border__bottom">
+            <h4 class="faq__header">
+                I will not tell my idea, do you guarantee confidentiality?
+            </h4>
+            <img
+                    class="faq__image"
+                    src="/src/assets/icons/IconPlus.svg"
+                    alt="open_block"
+            />
+        </article>
+    </div>
+</section>
+
+<hr />
+
+<footer class="footer">
+    <a href="#" class="footer__logo logo text_color_white">IT WEBSITE</a>
+    <div class="footer__main">
+        <article class="footer__item">
+            <img
+                    class="footer__icon icon__grayscale"
+                    src="/src/assets/icons/IconPhone.svg"
+                    alt="Icon"
+            />
+            <p class="form__label footer__text">Contact nums</p>
+            <p class="default__text text_color_white">+7 (778) 395 90 26</p>
+        </article>
+
+        <article class="footer__item">
+            <img
+                    class="footer__icon icon__grayscale"
+                    src="/src/assets/icons/IconEmail.svg"
+                    alt="Icon"
+            />
+            <p class="form__label footer__text">Post</p>
+            <p class="default__text text_color_white">mail@mail.com</p>
+        </article>
+
+        <article class="footer__item">
+            <img
+                    class="footer__icon icon__grayscale"
+                    src="/src/assets/icons/IconGeo.svg"
+                    alt="Icon"
+            />
+            <p class="form__label footer__text">Address</p>
+            <p class="default__text text_color_white">City city, steet st. 90</p>
+        </article>
+
+        <article class="footer__item">
+            <img
+                    class="footer__icon"
+                    src="/src/assets/icons/IconFile.svg"
+                    alt="Icon"
+            />
+            <p class="form__label footer__text">Leave a request</p>
+            <p class="default__text text_color_white">Leave a request</p>
+        </article>
+        <div class="footer__bottom">
+            <img class="footer__map" src="/src/assets/icons/Map.svg" alt="Map" />
+            <p class="default__text text_color_white">We work throughout world</p>
+        </div>
+    </div>
+</footer>
 <script src="index.js"></script>
 </body>
 </html>
